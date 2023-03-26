@@ -1,0 +1,82 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+# https://jupyterbook.org/en/stable/structure/configure.html#configure-all-entries-in-the-toc
+defaults:
+  maxdepth: 1 # limits the number of sub sections rendered by the table of contents directive
+parts:
+  - caption: APM Project
+    chapters:
+      - file: faq
+  - caption: APM Book
+    numbered: True
+    chapters:
+      - file: chapter-1
+        sections:
+          - glob: chapter-1/*
+      - file: chapter-2
+        sections:
+          - glob: chapter-2/*
+      - file: chapter-3
+        sections:
+          - glob: chapter-3/*
+      - file: chapter-4
+        sections:
+          - glob: chapter-4/*
+      - file: chapter-5
+        sections:
+          - glob: chapter-5/*
+      - file: chapter-6
+        sections:
+          - glob: chapter-6/*
+      - file: chapter-7
+        sections:
+          - glob: chapter-7/*
+      - file: chapter-8
+        sections:
+          - glob: chapter-8/*
+      - file: chapter-9
+        sections:
+          - glob: chapter-9/*
+      - file: chapter-10
+        sections:
+          - glob: chapter-10/*
+      - file: chapter-11
+        sections:
+          - glob: chapter-11/*
+      - file: chapter-12
+        sections:
+          - glob: chapter-12/*
+      - file: chapter-13
+        sections:
+          - glob: chapter-13/*
+      - file: chapter-14
+        sections:
+          - glob: chapter-14/*
+      - file: chapter-15
+        sections:
+          - glob: chapter-15/*
+      - file: chapter-16
+        sections:
+          - glob: chapter-16/*
+      - file: chapter-17
+        sections:
+          - glob: chapter-17/*
+      - file: chapter-18
+        sections:
+          - glob: chapter-18/*
+      - file: chapter-19
+        sections:
+          - glob: chapter-19/*
+      - file: chapter-20
+        sections:
+          - glob: chapter-20/*
+      - file: appendix
+        sections:
+          - glob: appendix/*
+  - caption: APM Module
+    chapters:
+      - file: module
+# a part is made up of chapters; chapters contain sections; sections contain content; content can be file, url, or glob

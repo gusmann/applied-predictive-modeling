@@ -1,0 +1,4 @@
+[filter "clear_ipynb_output"]
+	clean = jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace %f
+	required
+#  run `git config --local include.path ../.gitconfig` to add this to your git config
