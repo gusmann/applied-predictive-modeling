@@ -1,1 +1,0 @@
-# multivariate adaptive regression splines

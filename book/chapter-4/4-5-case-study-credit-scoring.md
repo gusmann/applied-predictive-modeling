@@ -1,1 +1,0 @@
-# case study credit scoring

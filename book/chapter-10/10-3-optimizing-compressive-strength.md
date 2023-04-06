@@ -1,1 +1,0 @@
-# optimizing compressive strength

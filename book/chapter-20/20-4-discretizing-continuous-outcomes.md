@@ -1,1 +1,0 @@
-# discretizing continuous outcomes
