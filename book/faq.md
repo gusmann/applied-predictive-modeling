@@ -19,7 +19,10 @@ TODO
 ## How to create/build docs?  
 
 ```bash
-poetry run python book/make-chapters.py
+# only needed when recreating/adding sections based on toc dump
+# poetry run python book/make-chapters.py
+
 poetry run jupyter-book build book
 poetry run python -m http.server --directory book/_build/html
+poetry run ghp-import -n -p -f book/_build/html
 ```
