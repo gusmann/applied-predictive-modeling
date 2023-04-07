@@ -10,3 +10,16 @@ TODO
 ## Why Python?
 
 TODO
+
+
+## Why Rust?
+
+TODO
+
+## How to create/build docs?  
+
+```bash
+poetry run python book/make-chapters.py
+poetry run jupyter-book build book
+poetry run python -m http.server --directory book/_build/html
+```
