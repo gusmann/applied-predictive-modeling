@@ -1,4 +1,4 @@
-# a short tour of the predictive modeling process
+# Chapter 2  
 
 ```{tableofcontents}
 ```

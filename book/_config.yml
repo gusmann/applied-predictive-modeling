@@ -3,6 +3,7 @@
 
 title: Applied Predictive Modeling - in Python
 author: Gustavo Argote
+email: gustavo@403labs.io
 logo: static/logo.png
 
 # Force re-execution of notebooks on each build.
@@ -42,3 +43,4 @@ sphinx:
   config:
     add_module_names: False
     autosummary_generate: True
+    # html_theme: pydata_sphinx_theme

@@ -4,8 +4,8 @@
 format: jb-book
 root: intro
 # https://jupyterbook.org/en/stable/structure/configure.html#configure-all-entries-in-the-toc
-defaults:
-  maxdepth: 1 # limits the number of sub sections rendered by the table of contents directive
+# defaults:
+#   maxdepth: 1 # limits the number of sub sections rendered by the table of contents directive
 parts:
   - caption: APM Project
     chapters:
