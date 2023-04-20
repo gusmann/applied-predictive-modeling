@@ -7,9 +7,6 @@ root: intro
 # defaults:
 #   maxdepth: 1 # limits the number of sub sections rendered by the table of contents directive
 parts:
-  - caption: APM Project
-    chapters:
-      - file: faq
   - caption: APM Book
     numbered: True
     chapters:
@@ -79,4 +76,7 @@ parts:
   - caption: APM Module
     chapters:
       - file: module
+  - caption: APM Project
+    chapters:
+      - file: faq
 # a part is made up of chapters; chapters contain sections; sections contain content; content can be file, url, or glob

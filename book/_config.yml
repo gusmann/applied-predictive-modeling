@@ -4,7 +4,7 @@
 title: Applied Predictive Modeling - in Python
 author: Gustavo Argote
 email: gustavo@403labs.io
-logo: _static/logo.png
+logo: logo.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -25,6 +25,7 @@ repository:
   url: https://github.com/gusmann/applied-predictive-modeling  # Online location of your book
   # path_to_book: ./  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
+  path_to_book: book
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
@@ -37,15 +38,18 @@ sphinx:
   extra_extensions:
   # https://jupyterbook.org/en/stable/advanced/developers.html#api-reference-from-docstrings
   - 'sphinx.ext.autodoc'
-  # - 'sphinx.ext.napoleon'
-  # - 'sphinx.ext.viewcode'
+  - 'sphinx.ext.napoleon'
+  - 'sphinx.ext.viewcode'
   - 'sphinx.ext.autosummary'
+  - 'sphinx_inline_tabs'
   config:
     add_module_names: False
     autosummary_generate: True
-    html_theme: pydata_sphinx_theme
-    html_theme_options:
-      switcher:
-        json_url: https://raw.githubusercontent.com/gusmann/applied-predictive-modeling/main/versions.json
-        version_match: 0.0.0
-      navbar_start: ["navbar-logo", "version-switcher"]
+
+    # Autodoc config reference
+    # https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html#configuration
+    autodoc_default_options:
+      members: true
+      member-order: bysource
+      undoc-members: true
+      private-members: false
