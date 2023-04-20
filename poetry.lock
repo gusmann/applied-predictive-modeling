@@ -2316,6 +2316,25 @@ rtd = ["myst-parser (>=0.17.0,<0.18.0)", "sphinx-book-theme (>=0.0.36)"]
 testing = ["coverage", "pytest (>=7.1,<8.0)", "pytest-cov", "pytest-regressions"]
 
 [[package]]
+name = "sphinx-inline-tabs"
+version = "2022.1.2b11"
+description = "Add inline tabbed content to your Sphinx documentation."
+category = "dev"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "sphinx_inline_tabs-2022.1.2b11-py3-none-any.whl", hash = "sha256:bb4e807769ef52301a186d0678da719120b978a1af4fd62a1e9453684e962dbc"},
+    {file = "sphinx_inline_tabs-2022.1.2b11.tar.gz", hash = "sha256:afb9142772ec05ccb07f05d8181b518188fc55631b26ee803c694e812b3fdd73"},
+]
+
+[package.dependencies]
+sphinx = ">=3"
+
+[package.extras]
+doc = ["furo", "myst-parser"]
+test = ["pytest", "pytest-cov", "pytest-xdist"]
+
+[[package]]
 name = "sphinx-jupyterbook-latex"
 version = "0.5.2"
 description = "Latex specific features for jupyter book"
@@ -2758,4 +2777,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "9daf213c049088d49e15b86f7567a3d3cfd0b0afd505be17e845b3f7a258905f"
+content-hash = "0edbe266b9cf6fff06d73520fb6fbe874dcb794757d39176f156025f33469da3"
